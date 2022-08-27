@@ -30,7 +30,7 @@ def predict_digit():
     image = np.array(image)
 
     # Reshape the image for the model
-    image = image.reshape(1, 28, 28, 1) 
+    image = image.reshape(1, 28, 28) 
 
     # Normalize the pixel values in image
     image = image / 255.
