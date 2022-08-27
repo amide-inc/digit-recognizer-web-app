@@ -40,7 +40,6 @@ def predict_digit():
     input_data = image.astype(np.float32)
     values = model.predict(input_data)
     value = np.argmax(values)
-    print("ok")
     response = { 
         "prediction": str(value),
         "confidence": str('0')
