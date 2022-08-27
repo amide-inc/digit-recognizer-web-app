@@ -40,9 +40,13 @@ def predict_digit():
     input_data = image.astype(np.float32)
     values = model.predict(input_data)
     value = np.argmax(values)
+    print("ok")
     response = { 
         "prediction": str(value),
-        "confidence": str('')
+        "confidence": str('0')
     }
 
     return jsonify(response)
+
+if __name__ == "__main__":
+    app.run(debug=True)
